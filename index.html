@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho: Agro Forte Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🌽 Agrinho: Agro Forte</h1>
+    <h3>Produção vs. Sustentabilidade</h3>
+    <div class="game-container">
+        <div class="stats">
+            <div class="money">💰 R$ <span id="money">0</span></div>
+            <div class="level">📊 Nível <span id="level">1</span></div>
+        </div>
+        <div class="bar-container">
+            <div class="bar-fill" id="ecoFill"></div>
+            <div class="bar-text" id="ecoText">Sustentabilidade: 50%</div>
+        </div>
+        <div class="bonus" id="bonusText">⚖️ Equilíbrio</div>
+        <button class="corn-btn" onclick="clickCorn(event)">🌽</button>
+        <p>Clique! (Poder: <span id="clickPower">1</span> | Bônus Nível: x<span id="levelBonus">1.0</span>)</p>
+        <div class="info">
+            <strong>📈 Como subir de Nível:</strong> A cada <span id="nextLevelCost">500</span> de grana, você sobe! <br>
+            <strong>Bônus:</strong> +10% produção por nível!
+        </div>
+        <h4 class="shop-title">🛒 Melhorias</h4>
+        <div class="shop">
+            <button class="upgrade-btn" onclick="buyUpgrade('worker')">
+                <div class="btn-details"><h4>👨‍🌾 Cortador</h4><p>+1/s</p></div>
+                <div class="btn-price" id="costWorker">R$ 500</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('fertilizer')">
+                <div class="btn-details"><h4>🧪 Fertilizante</h4><p>Click +3 | -15% Sust.</p></div>
+                <div class="btn-price" id="costFertilizer">R$ 1.500</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('tree')">
+                <div class="btn-details"><h4>🌳 Plantar Nativas</h4><p>+20% Sustentabilidade</p></div>
+                <div class="btn-price" id="costTree">R$ 3.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('irrigation')">
+                <div class="btn-details"><h4>💧 Irrigação</h4><p>+5 Clique</p></div>
+                <div class="btn-price" id="costIrrigation">R$ 8.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('tractor')">
+                <div class="btn-details"><h4>🚜 Trator</h4><p>+30/s | +5% Sust.</p></div>
+                <div class="btn-price" id="costTractor">R$ 40.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('cow')">
+                <div class="btn-details"><h4>🐄 Gado</h4><p>+10/s | -10% Sust.</p></div>
+                <div class="btn-price" id="costCow">R$ 15.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('bee')">
+                <div class="btn-details"><h4>🐝 Apiário</h4><p>+15/s | +15% Sust.</p></div>
+                <div class="btn-price" id="costBee">R$ 75.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('rain')">
+                <div class="btn-details"><h4>💦 Captação Chuva</h4><p>+25% Sustentabilidade</p></div>
+                <div class="btn-price" id="costRain">R$ 120.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('solar')">
+                <div class="btn-details"><h4>☀️ Usina Solar</h4><p>+100/s | +10% Sust.</p></div>
+                <div class="btn-price" id="costSolar">R$ 150.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('biomass')">
+                <div class="btn-details"><h4>🔥 Biometano</h4><p>+500/s | -20% Sust.</p></div>
+                <div class="btn-price" id="costBiomass">R$ 800.000</div>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade('tech')">
+                <div class="btn-details"><h4>🤖 Drone</h4><p>+1000/s | +5% Sust.</p></div>
+                <div class="btn-price" id="costTech">R$ 2.500.000</div>
+            </button>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
