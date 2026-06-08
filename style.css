@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: #f0f8ff;
+}
+
+h1 {
+  
+    color: #27ae60;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #666;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.game-container {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.money {
+    color: #d4ac0d;
+}
+
+.level {
+    color: #3498db;
+}
+
+.bar-container {
+    background: #ddd;
+    height: 25px;
+    border-radius: 12px;
+    margin: 15px 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 50%;
+    transition: width 0.5s;
+}
+
+.bar-text {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.bonus {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bonus-good {
+    color: #2ecc71;
+}
+
+.bonus-bad {
+    color: #e74c3c;
+}
+
+.bonus-neutral {
+    color: #f39c12;
+}
+
+.corn-btn {
+    font-size: 100px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+.corn-btn:active {
+    transform: scale(0.9);
+}
+
+.info {
+    background: #e8f4f8;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.shop-title {
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.upgrade-btn {
+    background: white;
+    border: 2px solid #eee;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.upgrade-btn:hover {
+    border-color: #2ecc71;
+    background: #f9fff9;
+    transform: translateX(5px);
+}
+
+.btn-details h4 {
+    margin: 0;
+    color: #27ae60;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.btn-details p {
+    margin: 3px 0 0;
+    font-size: 0.8rem;
+    color: #777;
+    text-align: left;
+}
+
+.btn-price {
+    background: #fff8dc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #9a7d0a;
+    min-width: 80px;
+}
